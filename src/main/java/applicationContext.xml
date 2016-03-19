@@ -13,6 +13,6 @@
 <aop:aspectj-autoproxy proxy-target-class="true" />
 <!--  <aop:aspectj-autoproxy /> -->
 
-<bean id="populator" class="com.apple.Populator" /> 
+<bean id="populator" class="com.model.Populator" /> 
 <bean id="aBean" class="aspect.PublicAspect" />
 </beans>

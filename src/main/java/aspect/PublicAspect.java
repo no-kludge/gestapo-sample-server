@@ -96,7 +96,7 @@ public class PublicAspect {
 	private List<String> getPrevClass(int invocationId) {
 		System.out.println("in getPrevClass");
 		try {
-			ResultSet rs = statement.executeQuery("select class, service from seq_viz.data where id=(select Max(id) from seq_viz.data)");
+			ResultSet rs = statement.executeQuery("select class, service from seq_viz.data where invocation_id=(select Max(invocation_id) from seq_viz.data)");
 			
 			rs.next();
 			

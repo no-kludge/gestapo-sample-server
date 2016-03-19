@@ -1,4 +1,4 @@
-package com.apple;
+package com.model;
 
 public class Populator {
 	public String getMessage() {
